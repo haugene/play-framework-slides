@@ -82,35 +82,46 @@ body {
   -o-transition: all .2s linear;
   transition: all .2s linear; }
 
-.reveal a:hover img {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #13daec;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
-
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left
+{
+  opacity: 0.4;
+}
+
 .reveal .controls div.navigate-left.enabled {
   border-right-color: #ffffff;
   opacity: 1.0; 
 }
 
-.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right
+{
+  opacity: 0.4;
+}
+
 .reveal .controls div.navigate-right.enabled {
   border-left-color: #ffffff;
   opacity: 1.0; 
 }
 
-.reveal .controls div.navigate-up,
-.reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #ffffff;
+.reveal .controls div.navigate-down
+{
+  opacity: 0.4;
+}
+
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #ffffff;
   opacity: 1.0; 
 }
 
-.reveal .controls div.navigate-down,
-.reveal .controls div.navigate-down.enabled {
-  border-top-color: #ffffff;
+.reveal .controls div.navigate-up
+{
+  opacity: 0.4;
+}
+
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #ffffff;
   opacity: 1.0; 
 }
 
@@ -176,4 +187,40 @@ body {
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
   padding: 20px;
   border-radius: 5px;
+}
+
+.presenter {
+  margin-top: 100px !important;
+  width: 330px;
+  height: 150px;
+  color: #202020;
+  text-align: left;
+  position: relative;
+}
+
+.presenter .presenterImage {
+  width: 110px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.presenterImage img {
+  border: 1px solid #021a40;
+}
+
+.presenter .presenterInfo {
+  line-height: 1em !important;
+  position: absolute;
+  font-size: 0.7em;
+  width: 300px !important; 
+}
+
+.kristian {
+  left: 60px;
+  top: 45px;
+}
+
+.daniel {
+  left: 180px;
+  top: 45px;
 }
